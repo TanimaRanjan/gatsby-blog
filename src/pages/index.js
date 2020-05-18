@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => {
     <SEO title="Home" />
     <div>
       <h1>All my recipes</h1>
-    
+      <h4>{data.allMarkdownRemark.totalCount} Posts </h4>
       { 
         data.allMarkdownRemark.edges.map(({node}) => (
 
